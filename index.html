@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -31,10 +32,10 @@
       display: flex;
       flex-direction: column;
     }
-    label, input, textarea {
+    label, input, select, textarea {
       margin-bottom: 1em;
     }
-    input, textarea {
+    input, select, textarea {
       padding: 0.5em;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -91,6 +92,21 @@
 
         <button type="submit">Enviar</button>
       </form>
+    </section>
+
+    <section>
+      <h2>Doe via Pix</h2>
+      <p>Você pode ajudar usando a chave Pix abaixo ou escaneando o QR Code:</p>
+
+      <p><strong>Chave Pix:</strong> 54576914898</p>
+
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=54576914898&size=200x200" 
+           alt="QR Code do Pix" width="200" height="200">
+
+      <br><br>
+      <button onclick="navigator.clipboard.writeText('54576914898'); alert('Chave Pix copiada para a área de transferência!')">
+        Copiar chave Pix
+      </button>
     </section>
   </main>
 
